@@ -6,7 +6,10 @@
         <div class="user user">User</div>
         <div class="user guest">Guest</div>
       </div>
-      <canvas v-canvas></canvas>
+      <canvas v-canvas id="whiteboard"></canvas>
+      <button id="add-rect"> 
+        Add Rectangle 
+      </button>
     </div>
   </div>
 </template>
@@ -14,11 +17,12 @@
 <script>
 import canvas from './canvas.directive.js';
 
+
 export default {
   name: 'app',
   directives: {
     canvas,
-  },
+  }
 };
 </script>
 
