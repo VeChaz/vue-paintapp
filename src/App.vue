@@ -7,9 +7,6 @@
         <div class="user guest">Guest</div>
       </div>
       <canvas v-canvas id="whiteboard"></canvas>
-      <button id="add-rect"> 
-        Add Rectangle 
-      </button>
     </div>
   </div>
 </template>
@@ -34,6 +31,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  height: 100vh;
 }
 canvas {
   background: navy;

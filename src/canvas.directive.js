@@ -1,43 +1,10 @@
 import { v4 } from 'uuid';
 import Pusher from 'pusher-js';
-import { fabric } from 'fabric';
 
 function inserted(el) {
   const canvas = el;
   const ctx = canvas.getContext('2d');
 
-  // Fabric
-  var canvas1 = new fabric.Canvas('whiteboard');
-  // document.getElementById("add-rect").onclick = function() {onSolidRect()};
-  // function onSolidRect() {
- 
-  //   var rect = new fabric.Rect({ 
-  //      top: 100,
-  //      left: 100,
-  //      width: 60,
-  //      height: 70,
-  //      fill: '',
-  //      selection: false,
-  //      fill: '#f55', 
-  //  });
-    
-  //  canvas1.add(rect);
-
-  canvas1.add(
-    new fabric.Rect({ top: 100, left: 100, width: 50, height: 50, fill: '#f55' }),
-    new fabric.Circle({ top: 140, left: 230, radius: 75, fill: 'green' }),
-    new fabric.Triangle({ top: 300, left: 210, width: 100, height: 100, fill: 'blue' })
-    );
-   
-   fabric.Image.fromURL('https://upload.wikimedia.org/wikipedia/commons/d/d7/Sad-pug.jpg', function(img) {
-    img.set({ left: 400, top: 350, angle: 30});
-    img.scaleToHeight(100);
-    img.scaleToWidth(200);
-    canvas.add(img);
-    });
-   
-   canvas1.isDrawingMode = true; //For free hand drawing
-    
   
 
   canvas.width = 1000;
